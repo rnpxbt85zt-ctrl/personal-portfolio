@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valentin De Frutos — Portfolio</title>
+  <meta name="description" content="Business Management student. Portfolio of Valentin De Frutos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">VDF</div>
+    <ul class="nav__links">
+      <li><a href="#about"    data-en="About"    data-es="Sobre mí">About</a></li>
+      <li><a href="#skills"   data-en="Skills"   data-es="Habilidades">Skills</a></li>
+      <li><a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a></li>
+      <li><a href="#resume"   data-en="Resume"   data-es="CV">Resume</a></li>
+      <li><a href="#contact"  data-en="Contact"  data-es="Contacto">Contact</a></li>
+    </ul>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <span class="lang-toggle__label">ES</span>
+    </button>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"    data-en="About"    data-es="Sobre mí"   onclick="closeMobile()">About</a></li>
+      <li><a href="#skills"   data-en="Skills"   data-es="Habilidades" onclick="closeMobile()">Skills</a></li>
+      <li><a href="#projects" data-en="Projects" data-es="Proyectos"  onclick="closeMobile()">Projects</a></li>
+      <li><a href="#resume"   data-en="Resume"   data-es="CV"         onclick="closeMobile()">Resume</a></li>
+      <li><a href="#contact"  data-en="Contact"  data-es="Contacto"   onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__noise"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow" data-en="Business Management · Junior" data-es="Administración de Empresas · Junior">Business Management · Junior</p>
+      <h1 class="hero__name">Valentin<br /><em>De Frutos</em></h1>
+      <p class="hero__tagline" data-en="Building the skills to lead, analyze, and execute." data-es="Desarrollando las habilidades para liderar, analizar y ejecutar.">
+        Building the skills to lead, analyze, and execute.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary" data-en="View My Work" data-es="Ver Proyectos">View My Work</a>
+        <a href="#contact"  class="btn btn--ghost"   data-en="Get in Touch"  data-es="Contactarme">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">
+      <span data-en="Scroll" data-es="Deslizar">Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__label" data-en="01 / About" data-es="01 / Sobre mí">01 / About</div>
+      <div class="about__grid">
+        <div class="about__text">
+          <h2 class="section__heading" data-en="Who I Am" data-es="Quién Soy">Who I Am</h2>
+          <p data-en="I'm a Business Management junior with a strong interest in strategy, operations, and the intersection of business and technology. I'm actively building my skillset through coursework, personal projects, and real-world experience."
+             data-es="Soy un estudiante de tercer año de Administración de Empresas con un fuerte interés en estrategia, operaciones y la intersección entre negocios y tecnología. Construyo activamente mis habilidades a través de cursos, proyectos personales y experiencia real.">
+            I'm a Business Management junior with a strong interest in strategy, operations, and the intersection of business and technology. I'm actively building my skillset through coursework, personal projects, and real-world experience.
+          </p>
+          <p data-en="I believe in clear communication, organized thinking, and continuous improvement — values I bring to every project and collaboration."
+             data-es="Creo en la comunicación clara, el pensamiento organizado y la mejora continua, valores que aporto a cada proyecto y colaboración.">
+            I believe in clear communication, organized thinking, and continuous improvement — values I bring to every project and collaboration.
+          </p>
+        </div>
+        <div class="about__stats">
+          <div class="stat">
+            <span class="stat__num">3rd</span>
+            <span class="stat__label" data-en="Year of Study" data-es="Año de Estudio">Year of Study</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">2</span>
+            <span class="stat__label" data-en="Languages" data-es="Idiomas">Languages</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">∞</span>
+            <span class="stat__label" data-en="Curiosity" data-es="Curiosidad">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <div class="section__label" data-en="02 / Skills" data-es="02 / Habilidades">02 / Skills</div>
+      <h2 class="section__heading" data-en="What I Bring" data-es="Lo Que Aporto">What I Bring</h2>
+      <div class="skills__grid">
+
+        <div class="skill-card">
+          <div class="skill-card__icon">◈</div>
+          <h3 data-en="Business Analysis" data-es="Análisis de Negocios">Business Analysis</h3>
+          <ul>
+            <li data-en="Financial Modeling" data-es="Modelado Financiero">Financial Modeling</li>
+            <li data-en="Market Research" data-es="Investigación de Mercado">Market Research</li>
+            <li data-en="SWOT / PESTEL" data-es="FODA / PESTEL">SWOT / PESTEL</li>
+            <li data-en="Data Interpretation" data-es="Interpretación de Datos">Data Interpretation</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">◇</div>
+          <h3 data-en="Tools & Software" data-es="Herramientas">Tools & Software</h3>
+          <ul>
+            <li>Microsoft Excel / Google Sheets</li>
+            <li>PowerPoint / Google Slides</li>
+            <li data-en="[Add your tools here]" data-es="[Agrega tus herramientas]">[Add your tools here]</li>
+            <li data-en="[e.g. Notion, SQL, Python]" data-es="[p.ej. Notion, SQL, Python]">[e.g. Notion, SQL, Python]</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">◉</div>
+          <h3 data-en="Soft Skills" data-es="Habilidades Blandas">Soft Skills</h3>
+          <ul>
+            <li data-en="Strategic Thinking" data-es="Pensamiento Estratégico">Strategic Thinking</li>
+            <li data-en="Team Leadership" data-es="Liderazgo de Equipos">Team Leadership</li>
+            <li data-en="Written Communication" data-es="Comunicación Escrita">Written Communication</li>
+            <li data-en="Problem Solving" data-es="Resolución de Problemas">Problem Solving</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-card__icon">◎</div>
+          <h3 data-en="Languages" data-es="Idiomas">Languages</h3>
+          <ul>
+            <li data-en="Spanish — Native" data-es="Español — Nativo">Spanish — Native</li>
+            <li data-en="English — [Your level]" data-es="Inglés — [Tu nivel]">English — [Your level]</li>
+            <li data-en="[Add more if applicable]" data-es="[Agrega más si aplica]">[Add more if applicable]</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section__label" data-en="03 / Projects" data-es="03 / Proyectos">03 / Projects</div>
+      <h2 class="section__heading" data-en="Selected Work" data-es="Trabajo Selecto">Selected Work</h2>
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__num">01</div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-en="[Project Title]" data-es="[Título del Proyecto]">[Project Title]</h3>
+            <p class="project-card__desc"
+               data-en="Describe your project here — what problem it solved, what tools you used, and what you learned."
+               data-es="Describe tu proyecto aquí: qué problema resolvió, qué herramientas usaste y qué aprendiste.">
+              Describe your project here — what problem it solved, what tools you used, and what you learned.
+            </p>
+            <div class="project-card__tags">
+              <span>[Tag 1]</span><span>[Tag 2]</span><span>[Tag 3]</span>
+            </div>
+          </div>
+          <a href="#" class="project-card__link" aria-label="View project">→</a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__num">02</div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-en="[Project Title]" data-es="[Título del Proyecto]">[Project Title]</h3>
+            <p class="project-card__desc"
+               data-en="Describe your project here — what problem it solved, what tools you used, and what you learned."
+               data-es="Describe tu proyecto aquí: qué problema resolvió, qué herramientas usaste y qué aprendiste.">
+              Describe your project here — what problem it solved, what tools you used, and what you learned.
+            </p>
+            <div class="project-card__tags">
+              <span>[Tag 1]</span><span>[Tag 2]</span><span>[Tag 3]</span>
+            </div>
+          </div>
+          <a href="#" class="project-card__link" aria-label="View project">→</a>
+        </article>
+
+        <article class="project-card project-card--wide">
+          <div class="project-card__num">03</div>
+          <div class="project-card__body">
+            <h3 class="project-card__title" data-en="[Academic or Personal Project]" data-es="[Proyecto Académico o Personal]">[Academic or Personal Project]</h3>
+            <p class="project-card__desc"
+               data-en="This could be a case study, a class project, or anything you're proud of. Don't undersell yourself."
+               data-es="Puede ser un estudio de caso, un proyecto de clase, o algo de lo que estés orgulloso. No te subestimes.">
+              This could be a case study, a class project, or anything you're proud of. Don't undersell yourself.
+            </p>
+            <div class="project-card__tags">
+              <span>[Tag 1]</span><span>[Tag 2]</span>
+            </div>
+          </div>
+          <a href="#" class="project-card__link" aria-label="View project">→</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="section section--alt" id="resume">
+    <div class="container">
+      <div class="section__label" data-en="04 / Resume" data-es="04 / CV">04 / Resume</div>
+      <div class="resume__block">
+        <div class="resume__text">
+          <h2 class="section__heading" data-en="My Resume" data-es="Mi Curriculum Vitae">My Resume</h2>
+          <p data-en="Download my resume for a complete overview of my academic background, experience, and skills."
+             data-es="Descarga mi CV para una visión completa de mi formación académica, experiencia y habilidades.">
+            Download my resume for a complete overview of my academic background, experience, and skills.
+          </p>
+          <div class="resume__actions">
+            <a href="assets/resume.pdf" download class="btn btn--primary" data-en="⬇ Download Resume" data-es="⬇ Descargar CV">⬇ Download Resume</a>
+            <a href="assets/resume.pdf" target="_blank" class="btn btn--ghost" data-en="View Online" data-es="Ver en línea">View Online</a>
+          </div>
+          <p class="resume__note" data-en="* Place your resume PDF in the /assets folder and name it resume.pdf"
+                                  data-es="* Coloca tu CV en PDF en la carpeta /assets con el nombre resume.pdf">
+            * Place your resume PDF in the /assets folder and name it resume.pdf
+          </p>
+        </div>
+        <div class="resume__preview">
+          <div class="resume__card">
+            <div class="resume__card-line" style="width:60%"></div>
+            <div class="resume__card-line" style="width:40%"></div>
+            <div class="resume__card-divider"></div>
+            <div class="resume__card-line" style="width:80%"></div>
+            <div class="resume__card-line" style="width:55%"></div>
+            <div class="resume__card-line" style="width:70%"></div>
+            <div class="resume__card-divider"></div>
+            <div class="resume__card-line" style="width:45%"></div>
+            <div class="resume__card-line" style="width:65%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section__label" data-en="05 / Contact" data-es="05 / Contacto">05 / Contact</div>
+      <div class="contact__block">
+        <h2 class="section__heading contact__heading"
+            data-en="Let's Connect."
+            data-es="Conectemos.">Let's Connect.</h2>
+        <p data-en="Open to internship opportunities, collaborations, or just a conversation about business and strategy."
+           data-es="Abierto a oportunidades de pasantía, colaboraciones, o simplemente una conversación sobre negocios y estrategia.">
+          Open to internship opportunities, collaborations, or just a conversation about business and strategy.
+        </p>
+        <div class="contact__links">
+          <a href="mailto:your@email.com" class="contact__item">
+            <span class="contact__icon">✉</span>
+            <span>your@email.com</span>
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact__item">
+            <span class="contact__icon">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/yourusername" target="_blank" class="contact__item">
+            <span class="contact__icon">⌥</span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__name">Valentin De Frutos</span>
+      <span class="footer__copy" data-en="Designed & built with purpose." data-es="Diseñado y construido con propósito.">Designed & built with purpose.</span>
+      <span class="footer__year">© 2025</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
